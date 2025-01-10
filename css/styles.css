@@ -7,16 +7,20 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #f8f4e3;
 }
 
 /* Header */
 .header {
-    background-color: #0d5726;
+    background-color: #1a291e;
     padding: 1rem 2rem;
     color: white;
+    border-radius: 0 0 50px 50px; /* Hace que el borde inferior sea ovalado */
+    margin-top: 20px; /* Desplaza el header hacia abajo */
+    position: relative;
+    z-index: 1;
 }
 
 .nav-container {
@@ -50,8 +54,9 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    color: #0d5726;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color: #1a291e;
 }
 
 .hero-content p {
@@ -67,41 +72,42 @@ body {
 .cta-button {
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
-    background-color: #0d5726;
+    background-color: #0f1b13;
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
 }
 
-.cta-button:hover {
-    background-color: #ffbb00;
-}
+
 
 /* Menu Section */
 .menu-section {
-    background-color: #523f0a;
+    background-color: #1a291e;
     padding: 2rem;
     text-align: center;
 }
 
 .menu-section h2 {
-    font-size: 2rem;
-    color: #0d5726;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #f8f4e3;
 }
 
 .menu-cards {
+    
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 3.5rem;
+    margin-top: 2.5rem;
 }
 
 .menu-card {
     background-color: white;
     border-radius: 8px;
     padding: 1rem;
-    width: 200px;
+    width: 20%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -125,17 +131,14 @@ body {
 .menu-button {
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #0d5726;
+    background-color: #0f1b13   ;
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
-.menu-button:hover {
-    background-color: #ffbb00;
-}
 
 /* Additional Info Section */
 .info-section {
