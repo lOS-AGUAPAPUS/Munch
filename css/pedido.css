@@ -52,7 +52,7 @@ body {
 
 .menu {
     background-color: white;
-    text-align: center;
+    
     padding: 2rem;
     margin: 0 auto;
     max-width: 60%; 
@@ -64,7 +64,7 @@ body {
     font-size: 1.5rem;
 }
 .menu-card{
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .contenido_card{
@@ -73,5 +73,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 8rem;
+}
+
+.menu-card img{
+    width: 350px;
+    height: auto;
 }
