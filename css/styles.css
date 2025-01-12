@@ -5,17 +5,26 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --main-bg-color: #f8f4e3;
+    --main-text-color: #333;
+    --secondary-bg-color: #1a291e;
+    --highlight-color: #ffd700;
+    --button-hover-color: #0d5726;
+}
+
 /* Body */
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #f8f4e3;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
 }
 
 /* Header */
 .header {
-    height: 11.5vh;
-    background-color: #1a291e;
+    height: auto;
+    background-color: var(--secondary-bg-color);
     align-items: center;
     width: 75%;
     padding: 1rem 2rem;
@@ -25,7 +34,7 @@ body {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .nav-container {
@@ -37,70 +46,77 @@ body {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffd700;
+    color: var(--highlight-color);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 7.0rem;
+    gap: 7rem;
 }
 
 .nav-links a {
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 2rem;
-    background-color: #f8f4e3;
+    background-color: var(--main-bg-color);
 }
 
 .hero-content h1 {
     font-family: 'Lobster', cursive;
     font-size: 9.5rem;
-    color: #1a291e;
+    color: var(--secondary-bg-color);
 }
-.svg-peque{
+
+.svg-peque {
     width: auto;
     height: 20px;
-
 }
+
 .hero-content p {
     font-size: 150%;
-    color: #1a291e;
+    color: var(--secondary-bg-color);
 }
 
-.hero-content img{
+.hero-content img {
     width: 45%;
     height: auto;
 }
 
-.portada_titulo{
+.portada_titulo {
     z-index: 2;
 }
 
-.portada_imagen{
+.portada_imagen {
     position: absolute;
-    top: 26%;;
+    top: 26%;
     left: 22%;
     object-fit: cover;
     z-index: 1;
 }
 
-.portada_texto{
+.portada_texto {
     position: relative;
     top: 19rem;
     margin-bottom: 20rem;
 }
 
-
 /* Menu Section */
 .menu-section {
-    background-color: #1a291e;
+    background-color: var(--secondary-bg-color);
     padding: 2rem;
     text-align: center;
 }
@@ -109,14 +125,14 @@ body {
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 4rem;
-    color: #f8f4e3;
+    color: var(--main-bg-color);
 }
 
 .menu-cards {
-    
     display: flex;
     justify-content: center;
-    gap: 3.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 2.5rem;
 }
 
@@ -124,9 +140,16 @@ body {
     background-color: white;
     border-radius: 8px;
     padding: 1rem;
-    width: 20%;
+    width: calc(100% - 2rem);
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .menu-card img {
@@ -137,11 +160,10 @@ body {
 .menu-card h3 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
-    color: #0d5726;
+    color: var(--button-hover-color);
 }
 
 .menu-card p {
-
     font-size: 0.9rem;
     color: #555;
 }
@@ -151,13 +173,17 @@ body {
     font-size: 110%;
     margin-top: 1rem;
     padding: 0.8rem 1.2rem;
-    background-color: #0f1b13   ;
+    background-color: var(--secondary-bg-color);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
 
+.menu-button:hover {
+    background-color: var(--button-hover-color);
+}
 
 /* Additional Info Section */
 .info-section {
@@ -167,7 +193,7 @@ body {
 
 .info-section h2 {
     font-size: 1.5rem;
-    color: #0d5726;
+    color: var(--button-hover-color);
 }
 
 .info-section p {
@@ -185,7 +211,7 @@ body {
 
 .join-team h2 {
     font-size: 1.5rem;
-    color: #0d5726;
+    color: var(--button-hover-color);
 }
 
 .join-team p {
@@ -194,3 +220,26 @@ body {
     color: #555;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 1rem;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+
+    .hero-content img {
+        width: 70%;
+    }
+
+    .menu-card {
+        width: 90%;
+    }
+}
