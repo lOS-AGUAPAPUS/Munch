@@ -98,6 +98,23 @@ body {
 }
 
 
+.portada_titulo {
+    z-index: 2;
+}
+
+.portada_imagen {
+    position: absolute;
+    top: 26%;
+    left: 22%;
+    z-index: 1;
+}
+
+.portada_texto {
+    position: relative;
+    top: 19rem;
+    margin-bottom: 20rem;
+}
+
 /* Menu Section */
 .menu-section {
     background-color: #1a291e;
