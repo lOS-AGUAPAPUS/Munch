@@ -17,9 +17,9 @@ body {
     height: 11.5vh;
     background-color: #1a291e;
     align-items: center;
-    width: 75%;
+    width: 1%;
     padding: 1rem 2rem;
-    color: white;
+    color: rgb(245, 244, 244);
     border-radius: 60px;
     margin: 20px auto;
     position: relative;
@@ -65,8 +65,8 @@ body {
     color: #1a291e;
 }
 .svg-peque{
-    width: auto;
-    height: 20px;
+    width: 100%;
+    height: 0px;
 
 }
 .hero-content p {
@@ -103,9 +103,9 @@ body {
 }
 
 .portada_imagen {
-    position: absolute;
-    top: 26%;
-    left: 22%;
+    position: sticky;
+    top: 19%;
+    left: 1%;
     z-index: 1;
 }
 
@@ -130,7 +130,6 @@ body {
 }
 
 .menu-cards {
-    
     display: flex;
     justify-content: center;
     gap: 3.5rem;
@@ -138,7 +137,7 @@ body {
 }
 
 .menu-card {
-    background-color: white;
+    background-color: rgb(250, 245, 245);
     border-radius: 8px;
     padding: 1rem;
     width: 20%;
@@ -169,7 +168,7 @@ body {
     margin-top: 1rem;
     padding: 0.8rem 1.2rem;
     background-color: #0f1b13   ;
-    color: white;
+    color: rgb(252, 252, 252);
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -216,18 +215,18 @@ body {
     .header {
         flex-direction: column;
         height: auto;
-        width: 90%; /* Más ajustado para pantallas pequeñas */
+        width: 100%; /* Más ajustado para pantallas pequeñas */
         padding: 1rem;
         text-align: center;
     }
 
     .nav-links {
         flex-direction: column;
-        gap: 1rem; /* Reduce el espacio entre enlaces */
+        gap: 2rem; /* Reduce el espacio entre enlaces */
     }
 
     .hero-content h1 {
-        font-size: 3rem; /* Reduce el tamaño del título */
+        font-size: 2rem; /* Reduce el tamaño del título */
     }
 
     .hero-content img {
@@ -240,9 +239,12 @@ body {
     }
 
     .menu-card {
-        width: 90%; /* Ocupa casi todo el ancho */
+        width: 100%; /* Ocupa casi todo el ancho */
     }
 }
+
+
+
 
 /* Estilos para tablets (pantallas medianas) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -272,23 +274,23 @@ body {
 @media (min-width: 1025px) {
     .header {
         height: 11.5vh; /* Como lo tienes ahora */
-        width: 75%;
+        width: 100%;
     }
 
     .hero-content h1 {
-        font-size: 9.5rem; /* Mantén el tamaño original */
+        font-size: 9rem; /* Mantén el tamaño original */
     }
 
     .hero-content img {
-        width: 45%; /* Tamaño original */
+        width: 60%; /* Tamaño original */
     }
 
     .menu-cards {
-        gap: 3.5rem; /* Espacio amplio entre tarjetas */
+        gap: 8rem; /* Espacio amplio entre tarjetas */
     }
 
     .menu-card {
-        width: 20%; /* Tamaño original */
+        width: 100%; /* Tamaño original */
     }
 }
 
