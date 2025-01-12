@@ -61,7 +61,7 @@ body {
 
 .hero-content h1 {
     font-family: 'Lobster', cursive;
-    font-size: 5rem;
+    font-size: 6rem;
     color: #1a291e;
 }
 .svg-peque{
@@ -72,6 +72,24 @@ body {
 .hero-content p {
     font-size: 150%;
     color: #1a291e;
+}
+
+.portada_titulo{
+    position: relative;
+    z-index: 1;
+}
+
+.portada_imagen{
+    position: absolute;
+    top: 23%;;
+    left: 22%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.portada_texto{
+    position: relative;
+    top: 50%;
 }
 
 
@@ -171,3 +189,7 @@ body {
     color: #555;
 }
 
+.hero-content img{
+    width: 20%;
+    height: auto;
+}
