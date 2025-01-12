@@ -194,3 +194,85 @@ body {
     color: #555;
 }
 
+/* Estilos para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        width: 90%; /* Más ajustado para pantallas pequeñas */
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem; /* Reduce el espacio entre enlaces */
+    }
+
+    .hero-content h1 {
+        font-size: 3rem; /* Reduce el tamaño del título */
+    }
+
+    .hero-content img {
+        width: 90%; /* Ajusta el ancho de la imagen */
+    }
+
+    .menu-cards {
+        flex-direction: column;
+        gap: 1.5rem; /* Más espacio entre las tarjetas */
+    }
+
+    .menu-card {
+        width: 90%; /* Ocupa casi todo el ancho */
+    }
+}
+
+/* Estilos para tablets (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        height: auto;
+        width: 85%; /* Ajuste para tablets */
+    }
+
+    .hero-content h1 {
+        font-size: 6rem; /* Tamaño más pequeño para tablets */
+    }
+
+    .hero-content img {
+        width: 70%; /* Reduce el tamaño de la imagen */
+    }
+
+    .menu-cards {
+        gap: 2rem; /* Reduce el espacio entre tarjetas */
+    }
+
+    .menu-card {
+        width: 40%; /* Más grandes en comparación a móvil */
+    }
+}
+
+/* Estilos para pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .header {
+        height: 11.5vh; /* Como lo tienes ahora */
+        width: 75%;
+    }
+
+    .hero-content h1 {
+        font-size: 9.5rem; /* Mantén el tamaño original */
+    }
+
+    .hero-content img {
+        width: 45%; /* Tamaño original */
+    }
+
+    .menu-cards {
+        gap: 3.5rem; /* Espacio amplio entre tarjetas */
+    }
+
+    .menu-card {
+        width: 20%; /* Tamaño original */
+    }
+}
+
+
