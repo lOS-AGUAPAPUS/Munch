@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
     background-color: #f8f4e3;
 }
 
@@ -49,22 +48,36 @@ body {
     text-decoration: none;
     color: white;
 }
+.Inicio_menu{
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.Inicio_menu h1 {
+    font-family: 'Lobster', ;
+    color: #1a291e;
+    font-size: 6.5vh;
+}
+
 
 .menu {
     background-color: white;
-    
     padding: 2rem;
     margin: 0 auto;
     max-width: 60%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 25px;
+    margin-top: 4rem;
 }
 
+
 .titulo_menu{
+    text-align: center;
     font-size: 1.5rem;
 }
-.menu-card{
-    gap: 4rem;
+
+.menu-card h2{
+    margin-top: 1rem;
 }
 
 .contenido_card{
