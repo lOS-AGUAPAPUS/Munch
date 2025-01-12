@@ -61,7 +61,7 @@ body {
 
 .hero-content h1 {
     font-family: 'Lobster', cursive;
-    font-size: 9.5rem;
+    font-size: 16.5vh;
     color: #1a291e;
 }
 .svg-peque{
@@ -87,7 +87,6 @@ body {
     position: absolute;
     top: 26%;;
     left: 22%;
-    object-fit: cover;
     z-index: 1;
 }
 
