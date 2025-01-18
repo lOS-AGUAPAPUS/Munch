@@ -10,14 +10,12 @@
 
 </head>
 <body>
-    
+    <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <button class="hamburger-menu" id="hamburger-menu">
-                ☰
-            </button>
             <nav class="navbar">
-                <ul class="nav-links" id="nav-links">
+                
+                <ul class="nav-links">
                     <li><a href="pedidos.html">Pedido</a></li>
                     <li><a href="#" class="logo">Sandwich Sandwich</a></li>
                     <li><a href="#">Combos</a></li>
@@ -26,8 +24,8 @@
         </div>
     </header>
     
+
     
-   
 
     <!-- Hero Section -->
     <section class="hero">
@@ -88,19 +86,6 @@
         <h2>Join the Team</h2>
         <p>Do you thrive in a fast-paced food production environment? Sandwich Sandwich is hiring!</p>
     </section>
-
-    <!-- Script para el menú hamburguesa -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const hamburgerMenu = document.getElementById("hamburger-menu");
-            const navLinks = document.getElementById("nav-links");
-        
-            hamburgerMenu.addEventListener("click", () => {
-                navLinks.classList.toggle("active"); // Activa/desactiva el menú
-            });
-        });
-    </script>
-    
 </body>
 </html>
 

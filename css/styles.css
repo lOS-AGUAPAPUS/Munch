@@ -12,7 +12,6 @@ body {
     background-color: #f8f4e3;
 }
 
-
 /* Header */
 .header {
     height: 11.5vh;
@@ -116,61 +115,12 @@ body {
     margin-bottom: 20rem;
 }
 
-/* General styles */
-.hamburger-menu {
-    display: none; /* Oculta el menú hamburguesa por defecto */
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
+/* Menu Section */
+.menu-section {
+    background-color: #1a291e;
+    padding: 2rem;
+    text-align: center;
 }
-
-/* Oculta el menú horizontal en móviles */
-.nav-links {
-    list-style: none;
-    display: flex; /* Horizontal por defecto */
-    gap: 2rem;
-}
-
-/* Mostrar el menú hamburguesa en dispositivos móviles */
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; /* El botón hamburguesa aparece solo en móviles */
-    }
-
-    .nav-links {
-        display: none; /* Ocultar el menú horizontal inicialmente */
-        flex-direction: column; /* Cambia a vertical al mostrarse */
-        gap: 1rem;
-        background-color: #1a291e;
-        padding: 1rem;
-        position: absolute;
-        top: 100%; /* Justo debajo del header */
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex; /* Mostrar menú en móviles cuando se activa */
-    }
-}
-
-/* Pantallas grandes: siempre mostrar el menú horizontal */
-@media (min-width: 769px) {
-    .nav-links {
-        display: flex; /* Siempre visible en pantallas grandes */
-        flex-direction: row; /* Horizontal */
-        position: static; /* Normal */
-        gap: 2rem;
-    }
-
-    .hamburger-menu {
-        display: none; /* Oculta el botón hamburguesa */
-    }
-}
-
 
 .menu-section h2 {
     font-family: 'Lobster', cursive;
