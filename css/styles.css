@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
-	--dark-color: #151515;
+	--primary-color: #083403;
+	--background-color: #ede4cf;
+	--dark-color: #e9d92e;
 }
 
 html {
@@ -72,7 +72,7 @@ html {
 
 .container-logo h1 a {
 	text-decoration: none;
-	color: #000;
+	color: #eddf3f;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
@@ -88,7 +88,7 @@ html {
 	font-size: 3rem;
 	color: var(--primary-color);
 	padding-right: 2.5rem;
-	border-right: 1px solid #e2e2e2;
+	border-right: 1px solid #eddf3f;
 }
 
 .container-user .fa-basket-shopping {
@@ -161,9 +161,9 @@ html {
 	position: relative;
 	display: flex;
 	align-items: center;
-	border: 2px solid #fff;
+	border: 2px solid #013a16;
 	border-radius: 2rem;
-	background-color: #fff;
+	background-color: #013a16;
 	height: 4.4rem;
 	overflow: hidden;
 }
@@ -223,7 +223,7 @@ html {
 }
 
 .content-banner h2 {
-	color: #fff;
+	color: #023e13;
 	font-size: 3.5rem;
 	font-weight: 500;
 	line-height: 1.2;
@@ -263,7 +263,7 @@ html {
 	justify-content: center;
 	gap: 1.5rem;
 
-	background-color: #fff;
+	background-color: #013a16;
 	border-radius: 1rem;
 	padding: 1.5rem 0;
 }
@@ -286,7 +286,7 @@ html {
 }
 
 .feature-content p {
-	color: #777;
+	color: #ffffff;
 	font-weight: 500;
 }
 
@@ -318,7 +318,7 @@ html {
 }
 
 .category-moca {
-	background-image: linear-gradient(#00000080, #00000080),
+	background-image: linear-gradient(#013a16, #013a16),
 		url('img/moca-category.jpg');
 	background-size: cover;
 	background-position: bottom;
@@ -326,7 +326,7 @@ html {
 }
 
 .category-capuchino {
-	background-image: linear-gradient(#00000080, #00000080),
+	background-image: linear-gradient(#013a16, #013a16),
 		url('img/capuchino-category.jpg');
 	background-size: cover;
 	background-position: center;
@@ -334,7 +334,7 @@ html {
 }
 
 .category-expreso {
-	background-image: linear-gradient(#00000080, #00000080),
+	background-image: linear-gradient(#013a16, #013a16),
 		url('img/expreso-category.jpg');
 	background-size: cover;
 	background-position: center;
@@ -388,7 +388,7 @@ html {
 
 .container-options span {
 	color: #777;
-	background-color: #fff;
+	background-color: #013a16;
 	padding: 0.7rem 3rem;
 	font-size: 1.4rem;
 	text-transform: capitalize;
@@ -414,11 +414,11 @@ html {
 }
 
 .card-product {
-	background-color: #fff;
+	background-color: #fbfffd;
 	padding: 2rem 3rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 2px rgba(252, 76, 76, 0.1);
 }
 
 .container-img {
@@ -433,7 +433,7 @@ html {
 	position: absolute;
 	left: 0;
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #ffffff;
 	padding: 2px 1.2rem;
 	border-radius: 1rem;
 	font-size: 1.2rem;
@@ -746,7 +746,7 @@ html {
 .information ul li,
 .my-account ul li {
 	list-style: none;
-	color: #fff;
+	color: #ffffff;
 	font-size: 1.4rem;
 	font-weight: 300;
 }
@@ -754,7 +754,7 @@ html {
 .information ul li a,
 .my-account ul li a {
 	text-decoration: none;
-	color: #fff;
+	color: #ffffff;
 	font-weight: 300;
 }
 
@@ -813,7 +813,7 @@ html {
 
 .content p {
 	font-size: 1.4rem;
-	color: #fff;
+	color: #ffffff;
 	font-weight: 300;
 }
 
@@ -821,7 +821,7 @@ html {
 	outline: none;
 	background: none;
 	border: none;
-	border-bottom: 2px solid #d2b495;
+	border-bottom: 2px solid #ffff00;
 	cursor: pointer;
 	padding: 0.5rem 0 1.2rem;
 	color: var(--dark-color);
@@ -839,7 +839,7 @@ html {
 .content button {
 	border: none;
 	background-color: #000;
-	color: #fff;
+	color: #fcfcfc;
 	text-transform: uppercase;
 	padding: 1rem 3rem;
 	border-radius: 2rem;
@@ -859,7 +859,7 @@ html {
 	justify-content: space-between;
 	padding-top: 2rem;
 
-	border-top: 1px solid #d2b495;
+	border-top: 1px solid #ffff00;
 }
 
 .copyright p {
