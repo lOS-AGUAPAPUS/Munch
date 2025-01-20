@@ -49,7 +49,7 @@ body {
     color: white;
 }
 .Inicio_menu{
-    margin-top: 6rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -61,13 +61,9 @@ body {
 
 
 .menu {
-    background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
-    max-width: 60%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 25px;
-    margin-top: 4rem;
+    max-width: 80%; 
 }
 
 
@@ -76,20 +72,72 @@ body {
     font-size: 1.5rem;
 }
 
-.menu-card h2{
-    margin-top: 1rem;
-}
+
 
 .contenido_card{
-    margin-top: 7rem;
-
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 3rem;
 }
 
-.menu-card img{
-    width: 75%;
-    height: auto;
+
+
+.menu-card {
+    padding: 4vh;
+    text-align: center;
+    background-color: white;
+    position: relative; /* Necesario para posicionar ::after */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    border-radius: 15px; /* Bordes redondeados para estilo */
+    transition: transform 0.3s ease; /* Suaviza el efecto al pasar el mouse */
+    cursor: pointer;
+    width: 35vh; /* Define un ancho fijo para evitar que se deforme */
+    height: 40vh; /* Altura fija para uniformidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
+
+.menu-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más grande para resaltar */
+}
+
+.menu-card img {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Ocupa 70% de la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    transition: transform 0.3s ease; /* Suaviza el movimiento */
+}
+
+.menu-card:hover img {
+    transform: scale(1.1); /* Amplía ligeramente la imagen */
+}
+
+.menu-card h2 {
+    margin-top: 1rem;
+    font-size: 2vh;
+    color: #444444;
+}
+
+.menu-card::after {
+    content: "Ver más"; /* Texto adicional */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    padding: 1vh 0;
+    opacity: 0; /* Oculto por defecto */
+    transform: translateY(100%); /* Posición inicial fuera del contenedor */
+    transition: all 0.3s ease; /* Suaviza la entrada */
+}
+
+.menu-card:hover::after {
+    opacity: 1; /* Muestra el texto */
+    transform: translateY(0); /* Posiciona el texto dentro del contenedor */
+}
+
