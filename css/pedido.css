@@ -141,3 +141,28 @@ body {
     transform: translateY(0); /* Posiciona el texto dentro del contenedor */
 }
 
+@media (max-width: 768px) {
+    .contenido_card {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+    }
+
+    .menu-card {
+        width: 80vw; /* Ajusta el ancho para pantallas más pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 2vh; /* Reduce el padding */
+        margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
+    }
+
+    .menu-card img {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-card {
+        width: 90vw; /* Ajusta el ancho para pantallas muy pequeñas */
+        padding: 1vh; /* Reduce aún más el padding */
+    }
+}
