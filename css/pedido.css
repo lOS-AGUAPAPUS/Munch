@@ -12,9 +12,13 @@ html {
 }
 
 * {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f4e3;
 }
 
 /* ********************************** */
@@ -30,6 +34,7 @@ html {
 	font-weight: 500;
 	font-size: 3rem;
 }
+
 
 /* ********************************** */
 /*               HEADER               */
@@ -119,7 +124,7 @@ html {
 }
 
 .menu {
-	display: flex;
+    display: flex;
 	gap: 2rem;
 }
 
@@ -140,7 +145,7 @@ html {
 	content: '';
 	width: 1.5rem;
 	height: 1px;
-	background-color: #fff;
+	background-color: #f8f4e3;
 	position: absolute;
 	bottom: -3px;
 	left: 50%;
@@ -246,10 +251,20 @@ html {
 
 
 
+/* ********************************** */
+/*               Contenido               */
+/* ********************************** */
 
 
 
 
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Opcional, solo si quieres centrar verticalmente */
+    flex-wrap: wrap; /* Para que los elementos se ajusten en varias líneas si es necesario */
+    
+}
 
 
 
