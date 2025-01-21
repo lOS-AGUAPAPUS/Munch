@@ -368,8 +368,13 @@ body{
     .menu-card {
         width: 80vw; /* Ajusta el ancho para pantallas más pequeñas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 8vh; /* Reduce el padding */
         margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
     }
+
+	.menu-card h2 {
+		font-size: 3vh; /* Ajusta el tamaño del texto */
+	}
 
     .menu-card img {
         height: 100%; /* Ajusta la altura automáticamente */
@@ -380,6 +385,12 @@ body{
 @media (max-width: 480px) {
     .menu-card {
         width: 90vw; /* Ajusta el ancho para pantallas muy pequeñas */
-        padding: 1vh; /* Reduce aún más el padding */
+        padding: 5vh; /* Reduce aún más el padding */
+    }
+
+    .menu-card img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        max-width: 150px; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Ajusta la altura automáticamente */
     }
 }
