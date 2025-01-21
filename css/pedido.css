@@ -368,13 +368,13 @@ body{
     .menu-card {
         width: 80vw; /* Ajusta el ancho para pantallas más pequeñas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
-        padding: 2vh; /* Reduce el padding */
         margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
     }
 
     .menu-card img {
-        height: auto; /* Ajusta la altura automáticamente */
-    }
+        height: 100%; /* Ajusta la altura automáticamente */
+		max-width: 300px;
+	}
 }
 
 @media (max-width: 480px) {
