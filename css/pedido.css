@@ -308,11 +308,17 @@ body{
     position: relative; /* Necesario para posicionar ::after */
     overflow: hidden; /* Oculta contenido que sobresalga */
     border-radius: 15px; /* Bordes redondeados para estilo */
-    transition: transform 0.3s ease; /* Suaviza el efecto al pasar el mouse */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     cursor: pointer;
     width: 20%; /* Define un ancho fijo para evitar que se deforme */
     height: auto; /* Altura fija para uniformidad */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.menu-card.expanded {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
 }
 
 .menu-card:hover {
@@ -352,6 +358,27 @@ body{
     transform: translateY(100%); /* Posición inicial fuera del contenedor */
     transition: all 0.3s ease; /* Suaviza la entrada */
 }
+
+.informacion_pedi {
+    display: none;
+    text-align: center;
+}
+
+.informacion_pedi img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 
 .menu-card:hover::after {
     opacity: 1; /* Muestra el texto */
