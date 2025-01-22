@@ -293,9 +293,9 @@ body{
 
 .contenido_card{
     margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;;
+    flex-wrap: wrap;
+	justify-content: center;
     gap: 3rem;
 }
 
@@ -359,26 +359,20 @@ body{
 }
 
 @media (max-width: 768px) {
-    .contenido_card {
-        display: flex;
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: center; /* Centra las tarjetas horizontalmente */
-    }
-
     .menu-card {
-        width: 80vw; /* Ajusta el ancho para pantallas más pequeñas */
+        width: 45%; /* Ajusta el ancho para pantallas más pequeñas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
-        padding: 8vh; /* Reduce el padding */
+        padding: 2vh; /* Reduce el padding */
         margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
     }
 
 	.menu-card h2 {
-		font-size: 3vh; /* Ajusta el tamaño del texto */
+		font-size: 4.5vh; /* Ajusta el tamaño del texto */
 	}
 
     .menu-card img {
-        height: 100%; /* Ajusta la altura automáticamente */
-		max-width: 300px;
+		width: 100%; 
+		height: auto;
 	}
 }
 
@@ -390,7 +384,6 @@ body{
 
     .menu-card img {
         width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        max-width: 150px; /* Establece un ancho máximo para la imagen */
         height: auto; /* Ajusta la altura automáticamente */
     }
 }
