@@ -275,7 +275,7 @@ body{
     text-align: center;
 }
 
-.Inicio_menu h1 {
+.Inicio_menu h2 {
     font-family: 'Lobster', ;
     color: #1a291e;
     font-size: 6.5vh;
@@ -292,11 +292,11 @@ body{
 
 
 .contenido_card{
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;;
     flex-wrap: wrap;
 	justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 
@@ -310,8 +310,8 @@ body{
     border-radius: 15px; /* Bordes redondeados para estilo */
     transition: transform 0.3s ease; /* Suaviza el efecto al pasar el mouse */
     cursor: pointer;
-    width: 35vh; /* Define un ancho fijo para evitar que se deforme */
-    height: 40vh; /* Altura fija para uniformidad */
+    width: 20%; /* Define un ancho fijo para evitar que se deforme */
+    height: auto; /* Altura fija para uniformidad */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
@@ -333,7 +333,7 @@ body{
 
 .menu-card h2 {
     margin-top: 1rem;
-    font-size: 2vh;
+    font-size: 2.5vh;
     color: #444444;
 }
 
@@ -359,31 +359,47 @@ body{
 }
 
 @media (max-width: 768px) {
-    .menu-card {
+    .Inicio_menu {
+		font-size: 2.5vh;
+	}
+	
+	.menu-card::after{
+		display: none;
+	}
+
+	.menu-card {
         width: 45%; /* Ajusta el ancho para pantallas más pequeñas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         padding: 2vh; /* Reduce el padding */
         margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
     }
 
-	.menu-card h2 {
-		font-size: 4.5vh; /* Ajusta el tamaño del texto */
-	}
-
     .menu-card img {
 		width: 100%; 
 		height: auto;
 	}
+
+	.menu-card h2{
+		font-size: 2.5vh;
+	}
 }
 
 @media (max-width: 480px) {
+	.Inicio_menu h2{
+		font-size: 3.5vh;
+	}
+
     .menu-card {
-        width: 90vw; /* Ajusta el ancho para pantallas muy pequeñas */
-        padding: 5vh; /* Reduce aún más el padding */
+        width: 45%; /* Ajusta el ancho para pantallas muy pequeñas */
+        padding: 2vh; /* Reduce aún más el padding */
     }
 
     .menu-card img {
         width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
         height: auto; /* Ajusta la altura automáticamente */
     }
+
+	.menu-card h2{
+		font-size: 1.5vh;
+	}
 }
