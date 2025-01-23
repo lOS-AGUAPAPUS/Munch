@@ -372,6 +372,8 @@ body{
     transition: none !important;
 }
 
+
+
 .menu-card.expanded:hover {
     transform: none !important;
     box-shadow: none !important;
