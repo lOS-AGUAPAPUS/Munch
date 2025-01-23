@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (infoContainer) {
                 infoContainer.style.display = 'block';
                 this.classList.add('expanded');
+
+                // Evitar el hover temporalmente
+                this.style.pointerEvents = 'none';
+                setTimeout(() => {
+                    this.style.pointerEvents = 'auto';
+                }, 300); // Asegúrate de que sea el mismo tiempo que las transiciones en CSS
             }
         });
     });
