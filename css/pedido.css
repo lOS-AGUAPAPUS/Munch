@@ -358,11 +358,9 @@ body{
 
 .menu-card.expanded {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    inset: 5%; /* Crea un margen interno alrededor del viewport */
+    width: auto;
+    height: auto;
     z-index: 1000;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -371,7 +369,7 @@ body{
     justify-content: space-between;
     padding: 2rem;
     text-align: left;
-    transition: none !important; /* Desactiva transiciones */
+    transition: none !important;
 }
 
 .menu-card.expanded:hover {
