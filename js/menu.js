@@ -1,27 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.container-options span').forEach(option => {
-        option.addEventListener('click', () => {
-            // Remover la clase 'active' de todas las opciones
-            document.querySelectorAll('.container-options span').forEach(span => span.classList.remove('active'));
-            // Añadir la clase 'active' a la opción seleccionada
-            option.classList.add('active');
+document.addEventListener('DOMContentLoaded', () => {
+    const containerOptions = document.querySelector('.container-options');
+    const productCards = document.querySelectorAll('.card-product');
+    const mainImg = document.getElementById('main-img');
 
-            // Obtener el filtro seleccionado
-            const filter = option.getAttribute('data-filter');
+    if (containerOptions) {
+        containerOptions.addEventListener('click', (event) => {
+            const option = event.target;
 
-            // Mostrar/Ocultar productos según el filtro
-            document.querySelectorAll('.card-product').forEach(product => {
-                product.style.display = 'none';
-                if (product.classList.contains(filter)) {
-                    product.style.display = 'block';
+            // Verificar que se hizo clic en un <span>
+            if (option.tagName === 'SPAN') {
+                // Remover la clase 'active' de todas las opciones
+                containerOptions.querySelectorAll('span').forEach(span => span.classList.remove('active'));
+                option.classList.add('active');
+
+                // Obtener el filtro seleccionado
+                const filter = option.getAttribute('data-filter');
+
+                // Mostrar/Ocultar productos según el filtro
+                productCards.forEach(product => {
+                    product.style.display = product.classList.contains(filter) ? 'block' : 'none';
+                });
+
+                // Cambiar la imagen principal
+                const firstVisibleProduct = document.querySelector(`.card-product.${filter} .container-img img`);
+                if (firstVisibleProduct && mainImg) {
+                    mainImg.setAttribute('src', firstVisibleProduct.src);
                 }
-            });
-
-            // Cambiar la imagen principal
-            const firstVisibleProduct = document.querySelector(`.card-product.${filter} .container-img img`);
-            if (firstVisibleProduct) {
-                document.getElementById('main-img').setAttribute('src', firstVisibleProduct.src);
             }
         });
-    });
+    }
 });
