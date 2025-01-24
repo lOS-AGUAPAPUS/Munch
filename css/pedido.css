@@ -483,11 +483,12 @@ body{
 
 
 	.menu-card.expanded img{
-		width: 80%;
+		width: 30vh;
 		height: auto;
 		margin-left: 0;
 		margin-right: 0;
 		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
 	}
 
 
@@ -497,15 +498,18 @@ body{
 	
 	.menu-card.expanded .info-content h2 {
 		margin-left: 2rem;
-		font-size: 3.5vh;
+		font-size: 3.8vh;
+		margin-bottom: 2.5rem;
 	}
 
 	.menu-card.expanded .info-content p {
-		font-size: 1.5vh;
+		font-size: 1.5rem;
+		margin-bottom: 2.5rem;
 	}
-
-
 	
+	.menu-card.expanded .info-content a {
+		margin-top: auto;
+	}
 }
 
 @media (max-width: 480px) {
