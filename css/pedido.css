@@ -407,6 +407,7 @@ body{
     height: 60%; /* Asegura que el contenedor ocupe toda la altura disponible */
     padding: 0;
 	margin-left: 7.2rem;
+	margin-right: 2.5rem;
 }
 
 .menu-card.expanded .info-content h2 {
@@ -417,6 +418,17 @@ body{
 .menu-card.expanded .info-content p {
 	color: #888888;
 	font-size: 2.7vh;
+}
+
+.menu-card.expanded .info-content a {
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #e9d92e;
+	background-color: #1a291e;
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
 }
 
 
@@ -463,6 +475,37 @@ body{
 	.menu-card h2{
 		font-size: 2.5vh;
 	}
+
+	.menu-card.expanded{
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.menu-card.expanded img{
+		width: 80%;
+		height: auto;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 2.5rem;
+	}
+
+
+	.menu-card.expanded .info-content{
+		margin-left: 2.4rem;
+	}
+	
+	.menu-card.expanded .info-content h2 {
+		margin-left: 2rem;
+		font-size: 3.5vh;
+	}
+
+	.menu-card.expanded .info-content p {
+		font-size: 1.5vh;
+	}
+
+
+	
 }
 
 @media (max-width: 480px) {
