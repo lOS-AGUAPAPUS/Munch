@@ -316,16 +316,11 @@ html {
 	border-radius: 2rem;
 	gap: 2rem;
 }
+/* ********************************** */
+/*            inicio	              */
+/* ********************************** */
 
-.category-moca {
-	background-image: linear-gradient(#1a291e, #1a291e),
-		url('img/moca-category.jpg');
-	background-size: cover;
-	background-position: bottom;
-	background-repeat: no-repeat;
-}
-
-.category-capuchino {
+.category-sanwich1 {
 	background-image: linear-gradient(#1a291e, #1a291e),
 		url('img/capuchino-category.jpg');
 	background-size: cover;
@@ -333,13 +328,49 @@ html {
 	background-repeat: no-repeat;
 }
 
-.category-expreso {
+.category-sanwich2 {
 	background-image: linear-gradient(#1a291e, #1a291e),
-		url('img/expreso-category.jpg');
+		url('img/capuchino-category.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.category-sanwich3 {
+	background-image: linear-gradient(#1a291e, #1a291e),
+		url('img/capuchino-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-sanwich4 {
+	background-image: linear-gradient(#1a291e, #1a291e),
+		url('img/capuchino-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-sanwich5 {
+	background-image: linear-gradient(#1a291e, #1a291e),
+		url('img/capuchino-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-sanwich6 {
+	background-image: linear-gradient(#1a291e, #1a291e),
+		url('img/capuchino-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* ********************************** */
+/*            FIN            */
+/* ********************************** */
 
 .card-category p {
 	font-size: 2.5rem;
