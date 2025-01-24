@@ -1,12 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const menuCards = document.querySelectorAll('.menu-card');
-    const closeButtons = document.querySelectorAll('.cerrar_info');
 
     menuCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const infoId = this.getAttribute('data-info');
-            const infoContainer = document.getElementById(infoId);
-
+        card.addEventListener('click', function () {
             // Ocultar todos los contenedores de información y restaurar las tarjetas
             menuCards.forEach(card => {
                 card.classList.remove('expanded');
@@ -17,28 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Mostrar el contenedor de información correspondiente y expandir la tarjeta
-            if (infoContainer) {
+            const infoContent = this.querySelector('.informacion_pedi');
+            if (infoContent) {
                 this.classList.add('expanded');
-                const infoContent = this.querySelector('.informacion_pedi');
-                if (infoContent) {
-                    infoContent.style.display = 'block';
-                    infoContent.innerHTML = infoContainer.innerHTML;
-                }
+                infoContent.style.display = 'block';
             }
         });
     });
 
-    closeButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
+    // Configura los botones de cerrar
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('cerrar_info')) {
             event.stopPropagation(); // Evita que el clic en el botón cierre expanda la tarjeta
-            const infoContainer = this.parentElement;
+            const infoContainer = event.target.parentElement;
             infoContainer.style.display = 'none';
 
             // Restaurar la tarjeta correspondiente
-            const card = this.closest('.menu-card');
+            const card = infoContainer.closest('.menu-card');
             if (card) {
                 card.classList.remove('expanded');
             }
-        });
+        }
     });
 });

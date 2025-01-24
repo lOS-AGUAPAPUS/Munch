@@ -266,10 +266,6 @@ body{
     
 }
 
-
-
-
-
 .Inicio_menu{
     margin-top: 2rem;
     text-align: center;
@@ -282,14 +278,10 @@ body{
 }
 
 
-
-
 .titulo_menu{
     text-align: center;
     font-size: 1.5rem;
 }
-
-
 
 .contenido_card {
     margin-top: 2rem;
@@ -357,19 +349,19 @@ body{
 }
 
 .menu-card.expanded {
-    position: fixed;
-    inset: 5%; /* Crea un margen interno alrededor del viewport */
-    width: auto;
-    height: auto;
-    z-index: 1000;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    text-align: left;
-    transition: none !important;
+    position: fixed;             
+    inset: 5%;   /* 5% padding */
+    width: auto; /* Ajusta el ancho para pantallas más grandes */
+    height: auto; /* Ajusta la altura automáticamente */ 
+    z-index: 1000;  /* Pone el menú en primer plano */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    display: flex;  /* Ajusta el contenido */
+    flex-direction: row; /* Alinea el contenido horizontalmente */
+    align-items: center;  /* Alinea el contenido verticalmente */
+	justify-content: flex-start; /* Alinea el contenido horizontalmente */
+    padding: 2rem; /* Ajusta el margen */
+    text-align: left; /* Alinea el texto */
+    transition: none !important; /* Desactiva la transición */
 }
 
 
@@ -381,8 +373,9 @@ body{
 }
 
 .menu-card.expanded img {
-    width: 40%;
+    width: 35%;
     height: auto;
+	margin-left: 6rem;
     margin-right: 2rem;
     transform: none !important;
     transition: none !important;
@@ -393,27 +386,57 @@ body{
     transition: none !important;
 }
 
-
-
-.informacion_pedi {	
-    display: none;
-    text-align: center;
+.menu-card.expanded .informacion_pedi {
+    display: block;
+    flex: 1;
+    padding-left: 2rem;
+    margin-left: 0; /* Elimina el margen a la izquierda */
+    max-width: 100%; /* Limita el ancho máximo del contenedor de información */
 }
+
+.menu-card.expanded .informacion_pedi a{
+	color: #e9d92e;
+
+}
+
+.menu-card.expanded .info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    width: 100%;
+    height: 60%; /* Asegura que el contenedor ocupe toda la altura disponible */
+    padding: 0;
+	margin-left: 7.2rem;
+}
+
+.menu-card.expanded .info-content h2 {
+	margin-left: 2rem;
+	font-size: 8.5vh;
+}
+
+.menu-card.expanded .info-content p {
+	color: #888888;
+	font-size: 2.7vh;
+}
+
 
 .informacion_pedi img {
     width: 40%;
     height: auto;
 }
 
-.close-btn {
+.cerrar_info {
     position: absolute;
     top: 10px;
     right: 10px;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     cursor: pointer;
 }
+
+
+
 
 
 @media (max-width: 768px) {
