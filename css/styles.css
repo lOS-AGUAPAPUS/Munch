@@ -204,45 +204,48 @@ html {
 .banner {
     background-image: linear-gradient(100deg, #00000000, #00000020),
     url('../img/chan0.png');
-    height: 60rem;
-    background-size: cover;
+    height: 20rem; /* Altura reducida del banner */
+    background-size: cover; /* Asegura que la imagen cubra el área del banner */
     background-position: center;
     background-attachment: fixed;
-    border: none; /* Quitar borde */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
 }
 
-
-
 .content-banner {
-	max-width: 90rem;
-	margin: 0 auto;
-	padding: 25rem 0;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 2rem; /* Ajusta el padding para no ocupar todo el espacio */
+    text-align: center; /* Centra el contenido de texto */
 }
 
 .content-banner p {
-	color: var(--primary-color);
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
-	font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1rem; /* Reducción en tamaño de fuente */
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .content-banner h2 {
-	color: #1a291e;
-	font-size: 3.5rem;
-	font-weight: 500;
-	line-height: 1.2;
+    color: #1a291e;
+    font-size: 2rem; /* Tamaño de fuente reducido para ajustarse a la altura */
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .content-banner a {
-	margin-top: 2rem;
-	text-decoration: none;
-	color: #fff;
-	background-color: var(--primary-color);
-	display: inline-block;
-	padding: 1rem 3rem;
-	text-transform: uppercase;
-	border-radius: 3rem;
+    margin-top: 1rem; /* Ajusta el margen superior */
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 1rem 2rem; /* Reduce el padding */
+    text-transform: uppercase;
+    border-radius: 3rem;
 }
+
 
 /* ********************************** */
 /*            MAIN CONTENT            */
