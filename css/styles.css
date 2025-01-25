@@ -207,6 +207,7 @@ html {
     height: 60rem;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     border: none; /* Quitar borde */
 }
 
@@ -226,8 +227,8 @@ html {
 }
 
 .content-banner h2 {
-	color: rgb(0, 0, 0);
-	font-size: 5.5rem;
+	color: #1a291e;
+	font-size: 3.5rem;
 	font-weight: 500;
 	line-height: 1.2;
 }
@@ -1106,5 +1107,3 @@ html {
 		font-size: 1.6rem;
 	}
 }
-
-
