@@ -21,10 +21,9 @@ html {
 /*             UTILIDADES             */
 /* ********************************** */
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	max-width: 120rem;
+	margin: 0 auto;
 }
-
 
 .heading-1 {
 	text-align: center;
@@ -109,22 +108,11 @@ html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: #123123;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
 }
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar li {
-    margin: 0 1rem;
-}
-
 
 .navbar .fa-bars {
 	display: none;
@@ -1019,21 +1007,10 @@ html {
 /* ********************************** */
 /*       MEDIA QUERIES -- 468px       */
 /* ********************************** */
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .menu {
-        display: none; /* Si quieres un menú tipo hamburguesa */
-    }
-}
-
 @media (max-width: 468px) {
-    html {
-        font-size: 42.5%;
-    }
-}
-
+	html {
+		font-size: 42.5%;
+	}
 
 	.content-banner {
 		max-width: 50rem;
@@ -1128,6 +1105,6 @@ html {
 	.content p{
 		font-size: 1.6rem;
 	}
-
+}
 
 
