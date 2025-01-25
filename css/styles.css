@@ -910,7 +910,7 @@ html {
 /* ********************************** */
 @media (max-width: 768px) {
 	html {
-		font-size: 55%;
+		font-size: 50%;
 	}
 
 	.hero {
@@ -1013,7 +1013,7 @@ html {
 /* ********************************** */
 @media (max-width: 468px) {
 	html {
-		font-size: 42.5%;
+		font-size: 40%;
 	}
 
 	.content-banner {
@@ -1051,12 +1051,12 @@ html {
 	}
 
 	.container-products {
-		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1rem;
 	}
 
 	.container-img .discount {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.content-card-product h3 {
@@ -1064,7 +1064,7 @@ html {
 	}
 
 	.gallery {
-		grid-template-rows: repeat(2, 20rem);
+		grid-template-rows: repeat(1, 20rem);
 	}
 
 	.blogs {
