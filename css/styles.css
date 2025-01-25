@@ -204,48 +204,44 @@ html {
 .banner {
     background-image: linear-gradient(100deg, #00000000, #00000020),
     url('../img/chan0.png');
-    height: 40rem; /* Altura reducida del banner */
-    background-size: cover; /* Asegura que la imagen cubra el área del banner */
+    height: 60rem;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* No repetir la imagen */
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    border: none; /* Quitar borde */
 }
 
+
+
 .content-banner {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 0 2rem; /* Ajusta el padding para no ocupar todo el espacio */
-    text-align: center; /* Centra el contenido de texto */
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
 }
 
 .content-banner p {
-    color: var(--primary-color);
-    font-size: 1rem; /* Reducción en tamaño de fuente */
-    margin-bottom: 1rem;
-    font-weight: 500;
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
 }
 
 .content-banner h2 {
-    color: #1a291e;
-    font-size: 2rem; /* Tamaño de fuente reducido para ajustarse a la altura */
-    font-weight: 500;
-    line-height: 1.2;
+	color: rgb(0, 0, 0);
+	font-size: 5.5rem;
+	font-weight: 500;
+	line-height: 1.2;
 }
 
 .content-banner a {
-    margin-top: 1rem; /* Ajusta el margen superior */
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--primary-color);
-    display: inline-block;
-    padding: 1rem 2rem; /* Reduce el padding */
-    text-transform: uppercase;
-    border-radius: 3rem;
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
 }
-
 
 /* ********************************** */
 /*            MAIN CONTENT            */
@@ -910,7 +906,7 @@ html {
 /* ********************************** */
 @media (max-width: 768px) {
 	html {
-		font-size: 50%;
+		font-size: 55%;
 	}
 
 	.hero {
@@ -1013,7 +1009,7 @@ html {
 /* ********************************** */
 @media (max-width: 468px) {
 	html {
-		font-size: 40%;
+		font-size: 42.5%;
 	}
 
 	.content-banner {
@@ -1051,12 +1047,12 @@ html {
 	}
 
 	.container-products {
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 		gap: 1rem;
 	}
 
 	.container-img .discount {
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 
 	.content-card-product h3 {
@@ -1064,7 +1060,7 @@ html {
 	}
 
 	.gallery {
-		grid-template-rows: repeat(1, 20rem);
+		grid-template-rows: repeat(2, 20rem);
 	}
 
 	.blogs {
@@ -1110,3 +1106,5 @@ html {
 		font-size: 1.6rem;
 	}
 }
+
+
