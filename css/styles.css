@@ -212,28 +212,22 @@ html {
     background-repeat: no-repeat;
 	background-size: contain; /* Ajusta el tamaño de la imagen de fondo */
     border: none; /* Quitar borde */
+
 }
 
 
 
 .content-banner {
-	max-width: 90rem;
+	max-width: 150vh;
 	margin: 0 auto;
 	padding: 25rem 0;
 }
 
-.content-banner p {
-	color: var(--primary-color);
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
-	font-weight: 500;
-}
 
 .content-banner h2 {
 	color: #1a291e;
-	font-size: 3.5rem;
+	font-size: 6vh;
 	font-weight: 500;
-	line-height: 1.2;
 }
 
 .content-banner a {
@@ -916,6 +910,9 @@ html {
 	.banner{
 		height: 40vh;
 	}
+	
+
+	
 
 	.hero {
 		padding: 2rem;
@@ -1018,6 +1015,10 @@ html {
 @media (max-width: 468px) {
 	html {
 		font-size: 42.5%;
+	}
+
+	.banner h2{
+		font-size: 2.5rem;
 	}
 
 	.content-banner {
