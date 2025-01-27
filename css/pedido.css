@@ -446,7 +446,66 @@ body{
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .Inicio_menu {
+		font-size: 2.5vh;
+	}
+	
+	.menu-card::after{
+		display: none;
+	}
 
+	.menu-card {
+        width: 45%; /* Ajusta el ancho para pantallas más pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 2vh; /* Reduce el padding */
+        margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
+    }
+
+    .menu-card img {
+		width: 100%; 
+		height: auto;
+	}
+
+	.menu-card h2{
+		font-size: 2.5vh;
+	}
+
+	.menu-card.expanded{
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.menu-card.expanded img{
+		width: 30vh;
+		height: auto;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+
+	.menu-card.expanded .info-content{
+		margin-left: 2.4rem;
+	}
+	
+	.menu-card.expanded .info-content h2 {
+		margin-left: 2rem;
+		font-size: 3.8vh;
+		margin-bottom: 2%;
+	}
+
+	.menu-card.expanded .info-content p {
+		font-size: 2.7vh;
+		margin-bottom: 2.5rem;
+	}
+	
+	.menu-card.expanded .info-content a {
+		margin-top: auto;
+	}
+}
 
 
 
