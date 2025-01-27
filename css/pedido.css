@@ -322,7 +322,7 @@ body{
 }
 
 .menu-card h2 {
-    margin-top: 1rem;
+    margin-top: 1vh;
     font-size: 2.5vh;
     color: #444444;
 }
@@ -375,8 +375,7 @@ body{
 .menu-card.expanded img {
     width: 35%;
     height: auto;
-	margin-left: 6rem;
-    margin-right: 2rem;
+	margin-left:  6%;;
     transform: none !important;
     transition: none !important;
 }
@@ -405,13 +404,12 @@ body{
     justify-content: center; /* Centra verticalmente */
     width: 100%;
     height: 60%; /* Asegura que el contenedor ocupe toda la altura disponible */
-    padding: 0;
-	margin-left: 7.2rem;
-	margin-right: 2.5rem;
+	margin-left: 2vh;
+	margin-right: 6%;
 }
 
 .menu-card.expanded .info-content h2 {
-	margin-left: 2rem;
+	margin-left: 2%;
 	font-size: 8.5vh;
 }
 
@@ -421,12 +419,13 @@ body{
 }
 
 .menu-card.expanded .info-content a {
-	margin-top: 2rem;
+	font-size: 1.5vh;
+	margin-top: 2vh;
 	text-decoration: none;
 	color: #e9d92e;
 	background-color: #1a291e;
 	display: inline-block;
-	padding: 1rem 3rem;
+	padding: 1vh 3vh;
 	text-transform: uppercase;
 	border-radius: 3rem;
 }
@@ -487,8 +486,8 @@ body{
 		height: auto;
 		margin-left: 0;
 		margin-right: 0;
-		margin-top: 2.5rem;
-		margin-bottom: 2.5rem;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 
 
@@ -499,11 +498,11 @@ body{
 	.menu-card.expanded .info-content h2 {
 		margin-left: 2rem;
 		font-size: 3.8vh;
-		margin-bottom: 2.5rem;
+		margin-bottom: 2%;
 	}
 
 	.menu-card.expanded .info-content p {
-		font-size: 1.5rem;
+		font-size: 2.7vh;
 		margin-bottom: 2.5rem;
 	}
 	
@@ -514,7 +513,7 @@ body{
 
 @media (max-width: 480px) {
 	.Inicio_menu h2{
-		font-size: 3.5vh;
+		font-size: 2.5vh;
 	}
 
     .menu-card {
@@ -522,12 +521,23 @@ body{
         padding: 2vh; /* Reduce aún más el padding */
     }
 
-    .menu-card img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
-
 	.menu-card h2{
 		font-size: 1.5vh;
+	}
+	
+	.menu-card.expanded .info-content h2 {
+		font-size: 3.5vh;
+		margin-bottom: 2vh;
+	}
+
+
+	.menu-card.expanded .info-content p {
+		font-size: 2vh;
+		margin-bottom: 2vh;
+	}
+
+	.menu-card.expanded .info-content a {
+		font-size: 1.8vh;
+		margin-top: 1vh;	
 	}
 }
