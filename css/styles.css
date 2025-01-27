@@ -205,11 +205,13 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
+    background-color: #f8f4e3; /* Cambia el color de fondo */
     background-image: url('../img/chan0.png'); /* Establece la imagen de fondo */
-    height: 60rem;
-    
+    height: 89vh;
     background-position: center;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: none; /* Quitar borde */
 }
 
 
